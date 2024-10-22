@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginVertical="32dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/edt_email"
+            android:background="@drawable/bg_edittext"
+            android:textStyle="bold"
+            android:paddingHorizontal="16dp"
+            android:hint="E-mail"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:inputType="textEmailAddress"/>
+
+        <EditText
+            android:id="@+id/edt_message"
+            android:hint="Message"
+            android:textStyle="bold"
+            android:layout_marginVertical="16dp"
+            android:paddingHorizontal="16dp"
+            android:inputType="textMultiLine"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="@drawable/bg_edittext"/>
+
+        <Button
+            android:id="@+id/btn_gmail"
+            android:text="Gmail"
+            android:textSize="16sp"
+            android:backgroundTint="#78593FB5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <Button
+            android:id="@+id/btn_second"
+            android:text="Screen2"
+            android:textSize="16sp"
+            android:backgroundTint="#78593FB5"
+            android:layout_margin="32dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
